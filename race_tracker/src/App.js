@@ -1,12 +1,15 @@
+import React from 'react';
+import { BrowserRouter} from 'react-router-dom';
+import Nav from './Components/Nav'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <BrowserRouter>
+          <Nav />
+        </BrowserRouter>
       </header>
     </div>
   );
