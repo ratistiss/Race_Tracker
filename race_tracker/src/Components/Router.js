@@ -4,12 +4,13 @@ import Standings from './Standings'
 
 
 const Router = () => {
-    <Switch>
-        <Route exact path="/" component={Standings} />
-        <Route exact path="/AddResults"/>
-        <Route path='*'/>
-    </Switch>
-
+    return (
+        <Switch>
+            <Route exact path="/" component={Standings} />
+            <Route exact path="/AddResults"/>
+            <Route path='*'/>
+        </Switch>
+    )
 }
 
 export default Router;
